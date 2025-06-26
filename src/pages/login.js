@@ -12,7 +12,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(${API_BASE_URL}/login, { username, password });
+      await axios.post(`${API_BASE_URL}/login`, { username, password });
       alert("Login successful!");
       navigate("/");
     } catch (err) {
