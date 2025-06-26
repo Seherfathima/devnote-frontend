@@ -16,7 +16,7 @@ export default function EditNote() {
 
   const fetchNote = async () => {
     try {
-      const res = await axios.get(${API_BASE_URL}/notes/${id});
+      const res = await axios.get(`${API_BASE_URL}/notes/${id}`);
       setTitle(res.data.title);
       setContent(res.data.content);
     } catch (err) {
@@ -27,7 +27,7 @@ export default function EditNote() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(${API_BASE_URL}/notes/${id}, { title, content });
+      await axios.put(`${API_BASE_URL}/notes/${id}`, { title, content });
       navigate("/");
     } catch (err) {
       console.error("Error updating note:", err);
