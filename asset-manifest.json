@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/devnote-frontend/static/css/main.a6224195.css",
-    "main.js": "/devnote-frontend/static/js/main.7398dc8d.js",
+    "main.js": "/devnote-frontend/static/js/main.19d99b00.js",
     "static/js/453.a3c1d153.chunk.js": "/devnote-frontend/static/js/453.a3c1d153.chunk.js",
     "index.html": "/devnote-frontend/index.html",
     "main.a6224195.css.map": "/devnote-frontend/static/css/main.a6224195.css.map",
-    "main.7398dc8d.js.map": "/devnote-frontend/static/js/main.7398dc8d.js.map",
+    "main.19d99b00.js.map": "/devnote-frontend/static/js/main.19d99b00.js.map",
     "453.a3c1d153.chunk.js.map": "/devnote-frontend/static/js/453.a3c1d153.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6224195.css",
-    "static/js/main.7398dc8d.js"
+    "static/js/main.19d99b00.js"
   ]
 }
