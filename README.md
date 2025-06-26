@@ -35,3 +35,11 @@ git clone https://github.com/seherfathima/devnote-frontend.git
 cd devnote-frontend
 npm install
 npm start
+🙋‍♀️ About the Project
+
+This project is completely self-made as part of my learning journey and portfolio building. It reflects my understanding of full-stack development using modern technologies.
+
+
+📄 License
+
+This project is for learning and demonstration purposes
