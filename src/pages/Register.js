@@ -12,7 +12,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(${API_BASE_URL}/register, { username, password });
+      await axios.post(`${API_BASE_URL}/register`, { username, password });
       alert("Registration successful! Please login.");
       navigate("/login");
     } catch (err) {
