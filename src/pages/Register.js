@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_BASE_URL = "https://devnote-backend-3.onrender.com";
+
 export default function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +12,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/register`, { username, password });
+      await axios.post(${API_BASE_URL}/register, { username, password });
       alert("Registration successful! Please login.");
       navigate("/login");
     } catch (err) {
