@@ -6,17 +6,17 @@ export default function AddNote() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const navigate = useNavigate();
+  const API_BASE_URL = "https://devnote-backend-3.onrender.com";
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await axios.post(`http://localhost:5000/notes`
-        , { title, content });
-      navigate("/");
-    } catch (err) {
-      console.error("Error adding note:", err);
-    }
-  };
+  e.preventDefault();
+  try {
+    await axios.post(${API_BASE_URL}/notes, { title, content });
+    navigate("/");
+  } catch (err) {
+    console.error("Error adding note:", err);
+  }
+};
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white/10 backdrop-blur-lg rounded-xl shadow-xl">
