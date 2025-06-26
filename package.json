@@ -1,9 +1,9 @@
-"homepage":
-"https://seherfathima.github.io/devnote-frontend"
-// {
+ {
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage":
+"https://seherfathima.github.io/devnote-frontend",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
