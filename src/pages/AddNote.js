@@ -11,7 +11,7 @@ export default function AddNote() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(${API_BASE_URL}/notes, { title, content });
+      await axios.post(`${API_BASE_URL}/notes`, { title, content });
       navigate("/");
     } catch (err) {
       console.error("Error adding note:", err);
