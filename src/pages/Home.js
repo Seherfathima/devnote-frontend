@@ -13,7 +13,7 @@ export default function Home() {
 
   const fetchNotes = async () => {
     try {
-      const res = await axios.get(${API_BASE_URL}/notes);
+      const res = await axios.get(`${API_BASE_URL}/notes`);
       setNotes(res.data);
     } catch (err) {
       console.error("Error fetching notes:", err);
@@ -22,7 +22,7 @@ export default function Home() {
 
   const deleteNote = async (id) => {
     try {
-      await axios.delete(${API_BASE_URL}/notes/${id});
+      await axios.delete(`${API_BASE_URL}/notes/${id}`);
       fetchNotes();
     } catch (err) {
       console.error("Error deleting note:", err);
@@ -53,7 +53,7 @@ export default function Home() {
               <h3 className="font-bold text-xl mb-2">{note.title}</h3>
               <p className="text-gray-200">{note.content}</p>
               <div className="mt-4 space-x-4">
-                <Link to={/edit/${note.id}} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl transition">
+                <Link to={`/edit/${note.id}`} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl transition">
                   Edit
                 </Link>
                 <button onClick={() => deleteNote(note.id)} className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl transition">
