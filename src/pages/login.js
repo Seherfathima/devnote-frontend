@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_BASE_URL = "https://devnote-backend-3.onrender.com";
+
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +12,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/login`, { username, password });
+      await axios.post(${API_BASE_URL}/login, { username, password });
       alert("Login successful!");
       navigate("/");
     } catch (err) {
