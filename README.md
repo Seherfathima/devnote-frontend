@@ -23,7 +23,8 @@ Frontend deployed at: [https://seherfathima.github.io/devnote-frontend/](https:/
 
 ## 🔗 Backend API
 
-Backend APIs are currently set to run locally, so functionalities like adding/editing notes will work when connected to the local backend.
+BACKEND IS DEPLOYED AT:
+https://devnote-backend-3.onrender.com
 ---
 
 ## 📦 Installation (For Local Development)
